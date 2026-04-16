@@ -1,0 +1,9 @@
+{
+	"name": "spotify-adf-project-aravind",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cac84418-9283-4c8d-a866-c3aa9ffbae7a",
+		"tenantId": "0503a2de-8cb4-4e89-a617-346ad17fa301"
+	}
+}
