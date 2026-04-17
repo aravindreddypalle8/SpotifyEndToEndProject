@@ -326,7 +326,8 @@
 					{
 						"activity": "Iterate Over each table",
 						"dependencyConditions": [
-							"Failed"
+							"Failed",
+							"Succeeded"
 						]
 					}
 				],
@@ -342,7 +343,7 @@
 					"method": "POST",
 					"url": "https://prod-29.northcentralus.logic.azure.com:443/workflows/46c7ade4f0e9452dbfbc5d1ce27b806b/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=CvmTze8zvTYVIoZ5BsKnRYqEzGTfM-SJdN_E5V_Ckew",
 					"body": {
-						"value": "{\n    \"pipeline_name\" : @{pipeline().Pipeline},\n    \"pipeline_id\" : @{pipeline().RunId}\n}",
+						"value": "{\n    \"pipeline_name\" : \"@{pipeline().Pipeline}\",\n    \"pipeline_id\" : \"@{pipeline().RunId}\"\"\n}",
 						"type": "Expression"
 					}
 				}
